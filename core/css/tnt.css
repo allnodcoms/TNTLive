@@ -14,5 +14,9 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow: auto;
-    background-color: #fdfdfd;
+    background-color: #000;
+}
+
+body.hidemouse, body.hidemouse * {
+	cursor: none !important;
 }

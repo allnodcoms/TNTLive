@@ -9,15 +9,15 @@ TNT.state = {
 	mouse_state: false, // true after mousedown, false after mouseup
 	key_state: false,
 	key_repeat: true, // default to accept repeating keys
-	keyboard_queue: [],
-	cursor_keys: {
+	keyboard_queue: [], // character buffer
+	cursor_keys: { // current state of cursor keys
 		up:false, 
 		down:false, 
 		left:false, 
 		right:false, 
 		space:false
 	},
-	
+	current_canvas: 0
 };
 
 TNT.init = (function() {
